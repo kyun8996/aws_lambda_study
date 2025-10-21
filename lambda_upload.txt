@@ -18,3 +18,10 @@ python -m zipfile -c ..\lambda_deploy.zip .
 # 4. ZIP 파일 업로드 
 ## Lambda 함수 → “코드” 탭 → “에서 업로드” 선택
 ## “.zip 파일 업로드” 클릭 후 lambda_deploy.zip 선택
+
+
+# 람다 코드를 보면 환경 변수를 사용했다.
+# ✅ Slack Webhook URL (환경 변수로 관리)
+# WEBHOOK_URL = os.environ["WEBHOOK_URL"]
+# S3_BUCKET_NAME = os.environ["S3_BUCKET_NAME"]
+# 환경 변수는 람다 함수 -> 구성 -> 환경변수에서 설정하면 된다.
