@@ -1,0 +1,12 @@
+# 1. lambda 함수 생성
+
+# 2. 함수 이름 설정, 런타임 python 3.x.x (내 로컬 실행환경과 맞추기), 아키텍쳐는 x86으로 설정
+
+# 3. 기본 lambda 권한을 가진 새 역할 생성 (미리 역할을 IAM에서 만들어도 됨)
+# 기본적으로 Lambda는 Amazon CloudWatch Logs에 로그를 업로드하는 권한을 가진 실행 역할을 생성합니다. 
+# 이 기본 역할은 나중에 트리거를 추가할 때 사용자 지정할 수 있습니다.
+
+# IAM 접속해서 역할로가면 내 lambda함수 이름이 있는 역할이 생성되어있다.
+# 역할을 클릭해서 권한추가 -> 정책연결을 클릭한다.
+# AmazonS3FullAccess, AWSLambdaBasicExecutionRole(기존에 기본적으로 있는 정책을 실수로 삭제 했을 경우) 
+# lambda함수가 S3에 접근할 수 있고 로그 기록을 CloudWatch에 남길 수 있다.
