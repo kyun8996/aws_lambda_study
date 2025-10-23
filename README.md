@@ -1,7 +1,7 @@
 # AWS Lambda를 이용한 데이터 수집 파이프라인 구축
 
 
-### 🧱 아키텍처 구성도
+### 🧱 아키텍처 구성도 ([다이어그램 그리는 사이트](https://www.drawio.com))
 ![AWS Lambda Architecture](img/aws_lambda_diagram.drawio.png)
 
 
