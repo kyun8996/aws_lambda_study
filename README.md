@@ -1,16 +1,16 @@
 # AWS Lambda를 이용한 데이터 수집 파이프라인 구축
 
 
-### 🧱 아키텍처 구성도 ([다이어그램 그리는 사이트](https://www.drawio.com))
+### 🧱 1. 아키텍처 구성도 ([다이어그램 그리는 사이트](https://www.drawio.com))
 ![AWS Lambda Architecture](img/aws_lambda_diagram.drawio.png)
 
 
-### 📘 프로젝트 개요
+### 📘 2. 프로젝트 개요
 무료 오픈소스 환율 데이터 API **Frankfurter**에서 환율 정보를 **AWS Lambda** 함수를 통해 
 데이터를 불러와 **CSV 파일로 가공**하여 **Amazon S3**에 업로드하는 파이프라인을 구현합니다.
 
 
-### ⚙️ Lambda 함수 배포 가이드
+### ⚙️ 3. Lambda 함수 배포 가이드
 ```bash
 # 1. 로컬에 작업용 폴더 만들기
 mkdir lambda_deploy
@@ -38,6 +38,6 @@ lambda_deploy/
 1. Slack Webhook URL, API_KEY 같은 경우 AWS Lambda -> 구성 -> 환경변수에서 설정하면 된다.
 2. AWS Lambda -> 구성 -> 일반 구성에서 제한 시간을 늘린다.
 
-#### 📦 S3 업로드 결과
+### 4. 📦 S3 업로드 결과
 
 ![S3 업로드 결과](img/s3_result.jpg)
