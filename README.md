@@ -37,6 +37,7 @@ lambda_deploy/
 #### ⚙️ Lambda 기본설정
 1. Slack Webhook URL, API_KEY 같은 경우 AWS Lambda -> 구성 -> 환경변수에서 설정하면 된다.
 2. AWS Lambda -> 구성 -> 일반 구성에서 제한 시간을 늘린다.
+3. IAM 에서 lambda 함수가 S3에 접근하기 위한 정책(AmazonS3FullAccess)을 연결한다.
 
 ### 4. 📦 S3 업로드 결과
 
